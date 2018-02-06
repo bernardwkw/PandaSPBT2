@@ -22,7 +22,7 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-public class ImportExcelActivity extends AppCompatActivity {
+public class ImportBookInfoActivity extends AppCompatActivity {
 
     private DaoSession daoSession;
 
@@ -56,82 +56,9 @@ public class ImportExcelActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-
-
-
         }
 
     }
-
-
-
-//    public void readFromExcel(String fileName){
-//
-//        try {
-//            FileInputStream fis = new FileInputStream(fileName);
-//            Workbook workbook = null;
-//            Log.e("fis", fis.toString());
-//            workbook = new XSSFWorkbook(fis);
-//
-//            //Get the number of sheets in the xlsx file
-//            int numberOfSheets = workbook.getNumberOfSheets();
-//
-////loop through each of the sheets
-//            for(int i=0; i < numberOfSheets; i++){
-//
-//                //Get the nth sheet from the workbook
-//                Sheet sheet = workbook.getSheetAt(i);
-//
-//                //every sheet has rows, iterate over them
-//                Iterator<Row> rowIterator = sheet.iterator();
-//                while (rowIterator.hasNext())
-//                {
-//                    String name = "";
-//                    String shortCode = "";
-//
-//                    //Get the row object
-//                    Row row = rowIterator.next();
-//
-//                    //Every row has columns, get the column iterator and iterate over them
-//                    Iterator<Cell> cellIterator = row.cellIterator();
-//
-//                    while (cellIterator.hasNext())
-//                    {
-//                        //Get the Cell object
-//                        Cell cell = cellIterator.next();
-//
-//                        //check the cell type and process accordingly
-//                        switch(cell.getCellType()){
-//                            case Cell.CELL_TYPE_STRING:
-//                                if(shortCode.equalsIgnoreCase("")){
-//                                    shortCode = cell.getStringCellValue().trim();
-//                                }else if(name.equalsIgnoreCase("")){
-//                                    //2nd column
-//                                    name = cell.getStringCellValue().trim();
-//                                }else{
-//                                    //random data, leave it
-//                                    System.out.println("Random data::"+cell.getStringCellValue());
-//                                }
-//                                break;
-//                            case Cell.CELL_TYPE_NUMERIC:
-//                                System.out.println("Random data::"+cell.getNumericCellValue());
-//                        }
-//                    } //end of cell iterator
-//
-//                } //end of rows iterator
-//
-//
-//            } //end of sheets for loop
-//
-//            //close file input stream
-//            fis.close();
-//
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     public void read(String inputFile) throws IOException {
 
