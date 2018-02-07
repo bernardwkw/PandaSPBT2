@@ -1,4 +1,4 @@
-package hua.tung.smk.pandaspbt.activities;
+package hua.tung.smk.pandaspbt.activity;
 
 
 import android.app.Application;

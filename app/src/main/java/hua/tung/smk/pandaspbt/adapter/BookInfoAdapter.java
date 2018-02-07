@@ -1,4 +1,4 @@
-package hua.tung.smk.pandaspbt.adapters;
+package hua.tung.smk.pandaspbt.adapter;
 
 /**
  * Created by User on 21/12/2017.

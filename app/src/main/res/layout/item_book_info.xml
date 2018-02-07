@@ -2,6 +2,16 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--<variable>-->
+        <!--name="movie"-->
+        <!--type="hua.tung.smk.pandapbst.Observer.Movie"-->
+    <!--</variable>-->
+
+    <data>
+        <import type="hua.tung.smk.pandaspbt.db.BookInfo"/>
+        <variable name="bookInfo" type="BookInfo"/>
+    </data>
+
     <LinearLayout
         android:id="@+id/root"
         android:orientation="vertical"
